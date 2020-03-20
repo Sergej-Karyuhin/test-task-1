@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Разработчик: Сергей Карюхин</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="section-1">
+      <header class="header">
+        <div>
+          <img class="header__purse" src="img/logo.png" alt="Кошелек">
+          <img src="img/kasko.png" alt="Каско">
+        </div>
+        <button class="header__button">
+          <img class="header__button__img" src="img/icon.png" alt="Консультация">
+          <p>Индивидуальная консультация</p>
+        </button>
+      </header>
+      <div class="selection-wrapper">
+        <div>
+          <p>Страхование</p>
+          <p>Автомобиль</p>
+        </div>
+        <div class="selection">
+          <h1 class="selection__title">Подбор Каско on-line</h1>
+          <p class="selection__text-1">Ответьте на <span>7 вопросов</span> и наш сервис подберет для Вас</p>
+          <p class="selection__text-2">самое выгодное предложение</p>
+
+          <div class="selection-calculation">
+            <label class="selection-calculation__label" for="auto-choice">1.Марка вашего авто:</label>
+            <input class="selection-calculation__input" list="auto-model" id="auto-choice" placeholder="Renault"/>
+            <datalist id="auto-model">
+                <option value="Renault">
+                <option value="Volkswagen">
+                <option value="Mitsubishi">
+                <option value="BMW">
+                <option value="Audi">
+            </datalist>
+            <button class="selection-calculation__button">Рассчитать</button>
+          </div>
+
+          <div class="selection__partners">
+            <img src="img/belgosstrax.png" alt="belgosstrax">
+            <img src="img/promtrans.png" alt="promtrans">
+            <img src="img/task.png" alt="task">
+            <img src="img/belneftestrax.png" alt="belneftestrax">
+            <img src="img/kupala.png" alt="kupala">
+            <img src="img/b_b.png" alt="b_b">
+          </div>
+          <div class="selection__statistics">
+            <div class="">23.06.2019</div>
+            <p>Обработано заявок: <span>984</span></p>
+          </div>
+        </div>
+        <p>Страхование</p>
+      </div>
+    </section>
+  </body>
+</html>
