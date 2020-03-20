@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Разработчик: Сергей Карюхин</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
     <section class="section-1">
@@ -13,20 +14,21 @@
           <img src="img/kasko.png" alt="Каско">
         </div>
         <button class="header__button">
-          <img class="header__button__img" src="img/icon.png" alt="Консультация">
-          <p>Индивидуальная консультация</p>
+          <img class="header__button__img" src="img/icon.png" alt="Консультация" width="19" height="19">
+          <p class="header__button__info">Индивидуальная консультация</p>
         </button>
       </header>
       <div class="selection-wrapper">
-        <div>
-          <p>Страхование</p>
-          <p>Автомобиль</p>
+        <div class="transparent-content">
+          <p class="selection-wrapper__title-1">Страхование</p>
+          <p class="selection-wrapper__title-2">Автомобиль</p>
+          <div class="horizontal-line-1"></div>
+          <div class="vertical-line"></div>
         </div>
         <div class="selection">
           <h1 class="selection__title">Подбор Каско on-line</h1>
-          <p class="selection__text-1">Ответьте на <span>7 вопросов</span> и наш сервис подберет для Вас</p>
+          <p class="selection__text-1">Ответьте на <span class="selection__text-1__questions">7 вопросов</span> и наш сервис подберет для Вас</p>
           <p class="selection__text-2">самое выгодное предложение</p>
-
           <div class="selection-calculation">
             <label class="selection-calculation__label" for="auto-choice">1.Марка вашего авто:</label>
             <input class="selection-calculation__input" list="auto-model" id="auto-choice" placeholder="Renault"/>
@@ -39,7 +41,6 @@
             </datalist>
             <button class="selection-calculation__button">Рассчитать</button>
           </div>
-
           <div class="selection__partners">
             <img src="img/belgosstrax.png" alt="belgosstrax">
             <img src="img/promtrans.png" alt="promtrans">
@@ -49,11 +50,14 @@
             <img src="img/b_b.png" alt="b_b">
           </div>
           <div class="selection__statistics">
-            <div class="">23.06.2019</div>
-            <p>Обработано заявок: <span>984</span></p>
+            <div class="selection__statistics__date">23.06.2019</div>
+            <p class="selection__statistics__bid">Обработано заявок: <span class="selection__statistics__bid_number">984</span></p>
           </div>
         </div>
-        <p>Страхование</p>
+        <div class="transparent-content">
+          <div class="horizontal-line-2"></div>
+          <p class="selection-wrapper__title-3">Страхование</p>
+        </div>
       </div>
     </section>
   </body>
