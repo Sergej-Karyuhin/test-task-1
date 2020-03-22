@@ -8,6 +8,8 @@ body {
   font-size: 14px;
 }
 
+
+/*SECTION-1*/
 .section-1 {
   background-image: url('img/bg.jpg');
   background-repeat: no-repeat;
@@ -35,6 +37,7 @@ body {
   border: 2px solid white;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 .header__button__img {
   padding-right: 13px;
@@ -49,7 +52,8 @@ body {
 .selection {
   display: flex;
   flex-direction: column;
-  width: 941px;
+  max-width: 941px;
+  width: 99.5%;
   height: 473px;
   margin: 0 auto;
   background-image: url('img/img.jpg');
@@ -86,12 +90,9 @@ body {
   border-radius: 4px;
   border: 0;
 }
-
-::-webkit-input-placeholder {padding-left: 9px}
-::-moz-placeholder          {padding-left: 9px}
-:-moz-placeholder           {padding-left: 9px}
-:-ms-input-placeholder      {padding-left: 9px}
-
+.selection-calculation__input::placeholder {
+  padding-left: 9px;
+}
 .selection-calculation__button {
   width: 229px;
   height: 40px;
@@ -103,6 +104,7 @@ body {
   font-weight: 600;
   color: #FFFFFF;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .selection__statistics {
   display: flex;
@@ -172,9 +174,105 @@ body {
 }
 
 
-
 @media all and (max-width: 1615px) {
   .transparent-content {
     display: none;
   }
 }
+
+@media all and (max-width: 720px) {
+  .selection__partners {
+    flex-wrap: wrap;
+  }
+  .selection {
+    width: 99%;
+  }
+  .selection__title {
+    margin: 24px 0 15px;
+    font-size: 24px;
+  }
+  .selection-calculation {
+    margin-top: 20px;
+  }
+  .selection-calculation__button {
+    margin-bottom: 24px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .selection__title {
+    margin-top: 90px;
+  }
+  .selection__partners {
+    display: none;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .selection {
+    width: 95%;
+  }
+}
+/*SECTION-1*/
+
+
+/*SECTION-2*/
+.section-2 .selection {
+  margin-top: 77px;
+}
+.section-2__input-container {
+  display: flex;
+  align-self: center;
+  margin-top: 77px;
+}
+.section-2__input-container__input {
+  width: 129px;
+  height: 80px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 34px;
+  color: rgba(47, 69, 92, 255);
+}
+.section-2__input-container__input::placeholder {
+  position: relative;
+  top: 4px;
+  left: 28px;
+  font-size: 34px;
+  color: rgba(47, 69, 92, 255);
+}
+.section-2__input-container__item {
+  align-self: center;
+  font-size: 44px;
+  color: rgba(255, 151, 4, 255);
+  cursor: pointer;
+}
+.decrement {
+  margin-right: 30px;
+}
+.increment {
+  margin-left: 30px;
+}
+.section-2__title {
+  margin-top: 59px;
+  text-align: center;
+  font-size: 34px;
+  color: rgba(255, 151, 4, 255);
+}
+.section-2 .selection-calculation__button {
+  align-self: center;
+  margin-top: 32px;
+}
+.section-2 .selection__statistics {
+  margin-top: 67px;
+}
+
+
+@media all and (max-width: 720px) {
+  .section-2__title {
+    font-size: 24px;
+  }
+}
+/*SECTION-2*/
