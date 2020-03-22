@@ -40,7 +40,7 @@
                 <option value="BMW">
                 <option value="Audi">
             </datalist>
-            <button class="selection-calculation__button">Рассчитать</button>
+            <button class="selection-calculation__button" id="section_1_button">Рассчитать</button>
           </div>
           <div class="selection__partners">
             <img src="img/belgosstrax.png" alt="belgosstrax">
@@ -70,7 +70,7 @@
           <input class="section-2__input-container__input" placeholder="2011">
           <p class="section-2__input-container__item increment">+</p>
         </div>
-        <button class="selection-calculation__button">Далее</button>
+        <button class="selection-calculation__button" id="section_2_button">Далее</button>
         <div class="selection__statistics">
           <div class="selection__statistics__date">23.06.2019</div>
           <p class="selection__statistics__bid">Обработано заявок: <span class="selection__statistics__bid_number">984</span></p>
@@ -103,16 +103,16 @@
             </div>
           </div>
         </div>
-        <form class="section-3__form">
+        <form class="section-3__form" action="index.php" method="post">
           <div class="section-3__form__input-name">
             <label for="client-name">Как к Вам обращаться?</label>
-            <input id="client-name" type="text" name="name" placeholder="Имя" class="section-3__form__input-name__input">
+            <input type="text" name="name" placeholder="Имя" class="section-3__form__input-name__input" required onkeydown="return checkName(event.key)">
           </div>
           <div class="section-3__form__input-phone">
             <label for="client-phone">Телефон для расчета</label>
-            <input id="client-phone" type="text" name="phone" placeholder="+375 __ ___ __ __" class="section-3__form__input-phone__input">
+            <input type="text" name="phone" placeholder="+375 __ ___ __ __" class="section-3__form__input-phone__input" required onkeydown="return checkPhone(event.key)">
           </div>
-          <button class="selection-calculation__button">Получить расчет</button>
+          <button class="selection-calculation__button" id="section_3_button" type="submit">Получить расчет</button>
         </form>
       </div>
     </section>
@@ -125,5 +125,7 @@
         </div>
       </div>
     </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
