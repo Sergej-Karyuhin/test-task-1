@@ -417,3 +417,22 @@ body {
   }
 }
 /*SECTION-3*/
+
+
+/*SECTION-4*/
+.section-4 .selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+}
+.section-4__text-container__thanks {
+  font-size: 45px;
+}
+.section-4__text-container__request {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #ff8202;
+}
+/*SECTION-4*/
