@@ -1,4 +1,4 @@
-## [Демонстрация](https://deltastream-test-task-2.netlify.com/) ##
+## [Демонстрация](https://deltastream-test-task-1.netlify.com/) ##
 ## Задание: ##
 * Необходимо сверстать небольшой Landing Page из макета psd (в архиве). 
 * Это небольшой постраничный quiz. 
